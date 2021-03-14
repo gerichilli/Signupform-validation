@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Signup Form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#" class="form" id="form">
+            <h3 class="form__heading">Register with us</h3>
+            <div class="form__item form__item--text">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter your username" id="username" class="form__input">
+                <!-- &#10007; -->
+                <div class="form__error hidden">Your username must be between 8 and 30 characters and has no white space</div>
+            </div>
+            <div class="form__item form__item--text">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your email" id="email" class="form__input">
+                <!-- &#10007; -->
+                <div class="form__error hidden">Please enter a valid email address</div>
+            </div>
+            <div class="form__item form__item--text">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" id="password" class="form__input">
+                <!-- &#10007; -->
+                <div class="form__error hidden">The password must be at least 8 characters, including one numerical character, one uppercase character</div>
+            </div>
+            <div class="form__item form__item--text">
+                <label for="re-password">Confirm password</label>
+                <input type="password" placeholder="Enter your password again" id="re-password" class="form__input">
+                <!-- &#10007; -->
+                <div class="form__error hidden">Password confirmation doesn't match</div>
+            </div>
+            <div class="form__item">
+                <input type="checkbox" id="agreeterms" class="checkbox">
+                <div class="form__checkbox">
+                    <span class="form__checked hidden"></span>
+                </div>
+                <label for="agreeterms">Terms of service</label>
+            </div>
+            <div class="form__item">
+                <input type="submit" value="Sign up" class="form__submit" id="submit">
+            </div>
+            <div class="form__success hidden">Thank for join with us!</div>
+        </form>
+        <div class="banner">
+            <img src="img.jpeg" alt="login banner" class="banner__img">
+        </div>
+    </div> 
+</body>
+</html>
