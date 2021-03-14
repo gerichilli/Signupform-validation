@@ -84,7 +84,9 @@ checkboxClone.addEventListener('click', function(){
 
 agreeTerms.addEventListener('change', checkMarkHideAndShow);
 
-form.addEventListener('submit', function(){
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+    
     if (checkUsername() && checkEmail() && checkPassword() && checkRePassWord() && agreeTerms.checked) {
         successMessage.classList.remove('hidden');
     } else {

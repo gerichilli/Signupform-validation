@@ -53,6 +53,13 @@ input:invalid {
 }
 
 
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: 70rem;
+    }
+}
+
 .hidden {
     display: none;
 }
@@ -72,6 +79,12 @@ input:invalid {
 
 .form {
     padding: 8rem 7rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .form {
+        padding: 5rem 4rem;
+    }
 }
 
 .form__heading {
